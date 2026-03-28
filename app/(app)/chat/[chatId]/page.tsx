@@ -67,7 +67,7 @@ export default function ChatPage({ params }: Props) {
     <div className="flex flex-1 h-full overflow-hidden">
       <div className="flex flex-col flex-1 h-full overflow-hidden">
         <header className="flex items-center justify-between px-4 h-12 border-b border-border bg-background/80 backdrop-blur-sm shrink-0">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 pl-8 md:pl-0">
             {isAnonymous && (
               <div className="flex items-center gap-1.5 text-xs text-muted-foreground bg-muted px-2.5 py-1 rounded-full">
                 <span>{ANONYMOUS_LIMIT - used} free message{ANONYMOUS_LIMIT - used !== 1 ? "s" : ""} left</span>
